@@ -4,6 +4,7 @@ import Home from "./Home";
 import Catalog from "./Catalog";
 import Services from "./Services";
 import About from "./About";
+import Contacts from "./Contacts";
 import CRM from "./CRM";
 
 const Index = () => {
@@ -24,7 +25,7 @@ const Index = () => {
       case "blog":
         return <div className="min-h-screen pt-32 pb-20"><div className="container mx-auto px-4"><h1 className="text-5xl font-bold">Блог и новости</h1><p className="text-xl text-muted-foreground mt-4">Раздел в разработке</p></div></div>;
       case "contacts":
-        return <div className="min-h-screen pt-32 pb-20"><div className="container mx-auto px-4"><h1 className="text-5xl font-bold">Контакты</h1><p className="text-xl text-muted-foreground mt-4">Раздел в разработке</p></div></div>;
+        return <Contacts />;
       case "crm":
         return <CRM />;
       default:
